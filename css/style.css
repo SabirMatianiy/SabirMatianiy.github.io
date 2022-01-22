@@ -59,8 +59,8 @@ body{
 }
 .header.active:before{
 	background: #fff;
+	box-shadow: 0 0 15px rgb(0 0 0 / 30%);
 	transition: 0.5s;
-
 }
 .header_body{
 	position: relative;
@@ -1851,7 +1851,7 @@ body{
 	.sbis_9_block_1{
 		display: flex;
 		flex-direction: column;
-		align-items: center;
+		padding: 0px 15px;
 	}
 }
 .sbis_9_block_2{
@@ -1908,6 +1908,12 @@ body{
 @media screen and (max-width: 1110px){
 	.sbis_9_block_2_inside{
 		padding: 0px 10px;
+	}
+}
+@media screen and (max-width: 700px){
+	.sbis_9_block_2_inside{
+		max-width: 100%;
+		padding: 0px;
 	}
 }
 .sbis_9_block_3 img{
@@ -1972,6 +1978,7 @@ body{
 	.sbis_10_block_1{
 		display: flex;
 		flex-direction: column-reverse;
+		padding: 0px 15px;
 	}
 }
 .sbis_10_block_2{
@@ -2060,6 +2067,9 @@ body{
 	flex-direction: column;
 }
 @media screen and (max-width: 700px){
+	.sbis_11_block_1{
+		padding: 0px 15px;
+	}
 	.sbis_11_block_2{
 		width: 100%;
 		align-items: flex-start;
