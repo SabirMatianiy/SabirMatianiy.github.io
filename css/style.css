@@ -1050,7 +1050,7 @@ body{
 @media screen and (max-width: 700px){
 	.sbis_3_adaptiv{
 		display: block;
-		padding: 30px 20px;
+		padding: 30px 15px;
 		padding-bottom: 10px;
 	}
 }
@@ -1157,7 +1157,7 @@ body{
 	.sbis_4_block_1{
 		display: flex;
 		flex-direction: column;
-		align-items: center;
+		padding: 0px 15px;
 	}
 	.sbis_4_block_3{
 		width: 100%;
@@ -1308,6 +1308,7 @@ body{
 	.sbis_5_block_1{
 		display: flex;
 		flex-direction: column;
+		padding: 0px 15px;
 	}
 }
 .sbis_5_block_2{
