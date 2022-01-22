@@ -1563,7 +1563,8 @@ body{
 }
 @media screen and (max-width: 700px){
 	.sbis_7_block_1{
-		display: none;
+		flex-direction: column;
+		padding: 0px 15px;
 	}
 }
 .sbis_7_block_2{
@@ -1577,9 +1578,14 @@ body{
 .sbis_7_block_item{
 	max-width: 520px;
 }
-.sbis_7_block_2_item_2{
-
-
+@media screen and (max-width: 700px){
+	.sbis_7_block_3{
+		width: 100%;
+		justify-content: center;
+	}
+	.sbis_7_block_item{
+		max-width: 100%;
+	}
 }
 .sbis_7_block_2_item_2 img{
 	max-width: 100%;
@@ -1597,6 +1603,12 @@ body{
 		font-size: calc(4vw - 8px);
 	}
 }
+@media screen and (max-width: 700px){
+	.sbis_7_block_2_heading{
+		font-size: 20px;
+		line-height: 24px;
+	}
+}
 .sbis_7_ul{
 	margin: 0px;
 	padding: 20px 0px 0px 20px;
@@ -1610,6 +1622,11 @@ body{
 @media screen and (max-width: 1000px){
 	.sbis_7_li{
 		font-size: calc(1vw + 7px);
+	}
+}
+@media screen and (max-width: 700px){
+	.sbis_7_li{
+		font-size: 15px;
 	}
 }
 .sbis_7_li::marker{
@@ -1628,6 +1645,11 @@ body{
 		font-size: calc(1vw + 7px);
 	}
 }
+@media screen and (max-width: 700px){
+	.sbis_7_block_2_text{
+		font-size: 15px;
+	}
+}
 .dotes_none{
 	border-bottom: none;
 }
@@ -1638,10 +1660,9 @@ body{
 	display: none;
 }
 @media screen and (max-width: 700px){
-	.sbis_7_adaptive{
-		display: block;
-		background: #f9f9f9;
-		}
+	.sbis_7_block_2{
+		width: 100%;
+	}
 }
 .sbis_7_adaptive_heading{
 	font-size: 20px;
@@ -1692,9 +1713,8 @@ body{
 }
 @media screen and (max-width: 700px){
 	.sbis_8_block_1{
-		display: flex;
 		align-items: flex-start;
-		padding: 0px 5px;
+		padding: 0px 15px;
 	}
 }
 .sbis_8_block_2{
@@ -1703,8 +1723,7 @@ body{
 }
 @media screen and (max-width: 700px){
 	.sbis_8_block_2{
-		margin-left: 25px;
-		margin-top: 0px;
+		margin-top: 30px;
 	}
 }
 .sbis_8_block_1_heading{
@@ -1725,6 +1744,7 @@ body{
 	.sbis_8_block_1_heading{
 		font-size: 20px;
 		line-height: 24px;
+		text-align: left;
 	}
 }
 .sbis_8_block_3{
@@ -1738,7 +1758,6 @@ body{
 		flex-direction: column;
 		align-items: center;
 		margin-top: 30px;
-		padding: 0px 10px;
 	}
 }
 .sbis_8_block_3_heading{
@@ -1866,9 +1885,7 @@ body{
 @media screen and (max-width: 700px){
 	.sbis_9_block_3{
 		max-width: 100%;
-		display: flex;
-		justify-content: center;
-		align-items: center;
+		margin: 0 auto;
 	}
 	.sait{
 		display: none;
@@ -2081,6 +2098,7 @@ body{
 	.sbis_11_block_2_heading{
 		font-size: 20px;
 		line-height: 24px;
+		text-align: left;
 	}
 }
 .sbis_11_block_2_text{
@@ -2131,7 +2149,7 @@ body{
 		line-height: 24px;
 		text-align: left;
 		margin: 0px;
-		padding: 30px 0px 0px 15px;
+		padding: 30px 0px 0px 0px;
 	}
 }
 .sbis_12_block_3{
