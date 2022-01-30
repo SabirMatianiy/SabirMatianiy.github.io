@@ -15,15 +15,12 @@ let scroll_div_11 = document.querySelector(".sbis_3_block_3_article_0_1");
 
 window.onscroll = function(){
 	let scrolled_1 = window.pageYOffset;
-	console.log("позиция скpолла:" + scrolled_1);
+	// console.log("позиция скpолла:" + scrolled_1);
 
     if(scrolled_1 > "10"){
 		header_body_scroll.classList.add("active");
-		console.log(header_body_scroll);
 		header.classList.add("active");
-		console.log(header);
 		header_menu.classList.add("scroll");
-		console.log(header_menu);
 	}
 	else{
 		header_body_scroll.classList.remove("active");
@@ -39,10 +36,15 @@ window.onscroll = function(){
 		setTimeout(onscroll_2, 1000);
 		setTimeout(onscroll_block_1, 2000);
 		setTimeout(onscroll_3, 2000);
-		// alert("work");
-		// console.log("work");
-		// console.log("позиция скролла:" + scrolled_1);
 	}
+	else{
+		scroll_div_6.style.display = "none";
+		scroll_div_7.style.display = "none";
+		console.log(scroll_div_6 , scroll_div_7)
+		setTimeout(onscroll_1_none, 100);
+		setTimeout(onscroll_block_1_none,100)
+	}
+
 	if(scroll_div_6.style.display == "block"){
 		setTimeout(onblock, 500);
 		setTimeout(block_4, 300);
@@ -77,4 +79,12 @@ window.onscroll_2 = function(){
 window.onscroll_3 = function(){
 		scroll_div_5.classList.add("active");
 
+}
+window.onscroll_1_none = function(){
+	scroll_div_3.classList.remove("active");
+	scroll_div_6.classList.remove("active");
+	scroll_div_7.classList.remove("active");
+}
+window.onscroll_block_1_none = function(){
+	scroll_div_10.style.display = "none";
 }
