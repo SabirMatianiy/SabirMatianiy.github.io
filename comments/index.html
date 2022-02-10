@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<style type="text/css">
+		.div{
+			/*background: red;*/
+		}
+		p{
+			font-size: 50px;
+			font-family: TensorFont,sans-serif;
+		}
+	</style>
+	<input type="text">
+	<textarea class="comment"></textarea>
+	<input type="file" id="img_change">
+	<div id="img_file">
+		<img src="" class="img_file_img">
+	</div>
+	<button>Sent</button>
+	<div class="div">
+		<p class="text"></p>
+		<img src="" class="img_file_img_input">
+	</div>
+	<div class="div_1"></div>
+	
+	<script>
+
+			let input = document.querySelector("input");
+			let button = document.querySelector("button");
+			let div = document.querySelector(".div");
+			let imgFile = document.getElementById("img_file");
+			let commText = document.querySelector(".comment");
+			let text = document.querySelector(".text");
+			let imgChange = document.getElementById("img_change");
+			let img_file_img = document.querySelector(".img_file_img");
+			let img_file_img_input = document.querySelector(".img_file_img_input");
+			let div_1 = document.querySelector(".div_1");
+
+
+
+
+			
+			img_change.addEventListener("change", function() {
+
+				imgFile.style.display = (imgFile.style.display == 'none') ? "block" : 'block';
+
+				
+				const reader = new FileReader();
+
+				reader.onload = function Img(e){
+				imgFile.innerHTML = `<img src="${e.target.result}" alt="фото">`;
+			}
+
+				reader.addEventListener("load", () => {
+					localStorage.setItem("recent-image", reader.result);
+				})
+
+				reader.readAsDataURL(this.files[0]);
+			});
+
+
+			let comments = [];
+			loadComments();
+			
+
+			button.onclick = function(){
+
+				var recentImageDataUrl = localStorage.getItem("recent-image");
+			
+					let comment = {
+					time : Math.floor(Date.now()/1000),
+					name : input.value,
+					body : commText.value,
+					img : recentImageDataUrl,
+				
+					}
+
+				input.value = "";
+				commText.value = "";
+				// imgFile.hidden = "true";
+				 imgFile.style.display = (imgFile.style.display == 'none') ? "none" : 'none';
+
+				
+		
+
+				comments.push(comment);
+				
+				saveComments();
+				showComments();
+				
+			}
+
+			
+			function saveComments(){
+
+				localStorage.setItem("comments" , JSON.stringify(comments));
+		}
+
+			function loadComments(){
+
+				if(localStorage.getItem("comments")) 
+
+					comments = JSON.parse(localStorage.getItem("comments"));
+			
+			showComments();
+		}
+			
+			function showComments(){
+				let commentsField = document.querySelector(".text");
+				
+				let out = "";
+				let imgout = "";
+				     comments.forEach((open) => {
+					out += `<p class="text"><em>${timeConverter(open.time)}</em></p>`
+					out += `<p class="">${open.name}</p>`
+					out +=  `<div>${open.body}</div>`
+					out += `<img src="${open.img}" alt="фото">`
+					
+
+				});
+				commentsField.innerHTML = out;
+				
+			}
+			function timeConverter(UNIX_timestamp){
+				var a = new Date(UNIX_timestamp * 1000);
+				var months = ["jan" , "Feb" , "Mar" , "Apr" , "May" , "Jun" , "Jul" , "Aug" , "Sep" , "Oct" , "Nov" , "Dec"];
+				var year = a.getFullYear();
+				var month = months[a.getMonth()];
+				var date = a.getDate();
+				var hour = a.getHours();
+				var min = a.getMinutes();
+				var sec = a.getSeconds();
+				var time = date + " " + month + " " + year + " " + hour + " : " + min;
+				return time;
+			}
+
+			
+			
+
+
+			
+			
+
+
+
+			
+
+			
+			
+
+			
+		 
+
+
+
+		
+
+		
+
+			
+			
+
+	</script>
+	
+</body>
+</html>
