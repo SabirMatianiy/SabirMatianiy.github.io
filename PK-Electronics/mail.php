@@ -16,7 +16,7 @@ $mail->SMTPAuth = true;                               // Enable SMTP authenticat
 $mail->Username = 'muslimahmadi@mail.ru'; // Ваш логин от почты с которой будут отправляться письма
 $mail->Password = 'assalamualeikum'; // Ваш пароль от почты с которой будут отправляться письма
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
-$mail->Port = 465; // TCP port to connect to / этот порт может отличаться у других провайдеров
+// $mail->Port = 465; // TCP port to connect to / этот порт может отличаться у других провайдеров
 
 $mail->setFrom('muslimahmadi@mail.ru'); // от кого будет уходить письмо?
 $mail->addAddress('matianiysamsung@gmail.com');     // Кому будет уходить письмо 
