@@ -1,4 +1,7 @@
 $(document).ready(function(){
+	$('.owl-carousel').owlCarousel({
+	lazyLoad:false,
+})
 	$(".slide-one").owlCarousel({
 		loop: true,
 		items: true,
