@@ -2,12 +2,14 @@ $(document).ready(function(){
 	$(".slide-one").owlCarousel({
 		loop: true,
 		items: true,
+		lazyLoad: false,
 		autoHeight: true,
 		dots: true,
 	})
 	$(".slide-two").owlCarousel({
 		loop: true,
 		items: 4,
+		lazyLoad: false,
 		dots: true,
 		autoHeight: true,
 		autoWidth: false,
@@ -37,6 +39,7 @@ $(document).ready(function(){
 	$(".slide-three").owlCarousel({
 		loop: false,
 		items: false,
+		lazyLoad: false,
 		autoHeight: false,
 		dots: false,
 		autoWidth: false,
