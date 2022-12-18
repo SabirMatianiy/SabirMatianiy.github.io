@@ -1,0 +1,17 @@
+// function fun1() {
+// 	var rng=document.getElementById('r1'); //rng - это Input
+//     var div=document.getElementById('test'); // div - блок test
+// 	div.style.width=rng.value+'px';
+// }
+
+// var rng = document.querySelector("#r1");
+// r1.oninput = function() {
+// 	div=document.getElementById('test');
+// 	div.style.width=rng.value+'px';
+// }
+
+var rng = document.querySelector("#r1");
+ rng.addEventListener("input" , function(){
+	 div=document.getElementById('test');
+	 div.style.width=rng.value+'px';
+ })
