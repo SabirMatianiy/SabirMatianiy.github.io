@@ -112,6 +112,7 @@ body.lock {
 	height: 100%;
 	background-color: rgba(32, 10, 10, 0.55);
 	position: relative;
+	z-index: 10;
 }
 .header_menu_content {
 	max-width: 325px;
@@ -119,7 +120,7 @@ body.lock {
 	overflow: auto;
 	background-color: rgba(255, 255, 255, 1);
 	box-sizing: border-box;
-	margin-top: 99px;
+	margin-top: 70px;
 	padding-bottom: 110px;
 }
 .header_menu_close {
@@ -644,6 +645,7 @@ body.lock {
 	right: 10px;
 	transition: 0.5s;
 	cursor: pointer;
+	z-index: 9;
 }
 .scroll_button.btn {
 	display: block !important;
@@ -962,8 +964,8 @@ body.lock {
 	letter-spacing: 0em;
 	text-align: left;
 }
-input[type="range"] {
-	width: 100%;
+.range_track > input[type="range"] {
+	width: 101%;
 	-webkit-appearance: none;
 	background-color: rgba(209, 209, 209, 1);
 }
@@ -1569,6 +1571,9 @@ button[type="button"] {
 @media screen and (max-width: 1100px) {
 	.maxproff_section_content_price {
 		display: none;
+	}
+	.maxproff_section_price_container {
+		padding: 0px;
 	}
 	.maxproff_section_content_slider {
 		display: block;
