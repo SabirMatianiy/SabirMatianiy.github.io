@@ -19,6 +19,62 @@
         watchSlidesProgress: true,
         breakpoints: {
           731: {
+            direction: "horizontal",
+          },
+          769: {
+            direction: "vertical",
+            slidesPerView: 5,
+          },
+         },
+       });
+
+     var swiper2 = new Swiper(".mySwiper2", {
+        slidesPerView: 1,
+        effect: "fade",
+         navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+          swiper: swiper,
+        },
+      });
+
+        var swiper = new Swiper(".mySwiper1_tabs", {
+        spaceBetween: 5,
+        slidesPerView: 4,
+        direction: "vertical",
+        freeMode: true,
+        watchSlidesProgress: true,
+          breakpoints: {
+          731: {
+            direction: "horizontal"
+          },
+          769: {
+            direction: "vertical"
+          },
+         },
+      });
+
+      var swiper2 = new Swiper(".mySwiper2_tabs", {
+        slidesPerView: 1,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+          swiper: swiper,
+        },
+      }); 
+
+      var swiper = new Swiper(".mySwiper1_tabs_1", {
+        spaceBetween: 5,
+        slidesPerView: 4,
+        direction: "vertical",
+        freeMode: true,
+        watchSlidesProgress: true,
+        breakpoints: {
+          731: {
             direction: "horizontal"
           },
           769: {
@@ -27,7 +83,63 @@
          },
        });
 
-      var swiper2 = new Swiper(".mySwiper2", {
+     var swiper2 = new Swiper(".mySwiper2_tabs_2", {
+        slidesPerView: 1,
+         navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+          swiper: swiper,
+        },
+      });
+
+
+
+      var swiper = new Swiper(".mySwiper1_tabs_1_1", {
+        spaceBetween: 5,
+        slidesPerView: 4,
+        direction: "vertical",
+        freeMode: true,
+        watchSlidesProgress: true,
+        breakpoints: {
+          731: {
+            direction: "horizontal"
+          },
+          769: {
+            direction: "vertical"
+          },
+         },
+       });
+
+     var swiper2 = new Swiper(".mySwiper2_tabs_2_2", {
+        slidesPerView: 1,
+         navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+          swiper: swiper,
+        },
+      });
+
+      var swiper = new Swiper(".mySwiper1_tabs_1_1_1", {
+        spaceBetween: 5,
+        slidesPerView: 4,
+        direction: "vertical",
+        freeMode: true,
+        watchSlidesProgress: true,
+        breakpoints: {
+          731: {
+            direction: "horizontal"
+          },
+          769: {
+            direction: "vertical"
+          },
+         },
+       });
+
+     var swiper2 = new Swiper(".mySwiper2_tabs_2_2_2", {
         slidesPerView: 1,
          navigation: {
           nextEl: ".swiper-button-next",
