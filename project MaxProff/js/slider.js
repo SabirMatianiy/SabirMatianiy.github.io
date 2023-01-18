@@ -31,12 +31,23 @@
      var swiper2 = new Swiper(".mySwiper2", {
         slidesPerView: 1,
         effect: "fade",
+         fadeEffect: {
+        crossFade: true
+        },
          navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
         thumbs: {
           swiper: swiper,
+        },
+        breakpoints: {
+          769: {
+            effect: "fade",
+            fadeEffect: {
+              crossFade: true
+            },
+          },
         },
       });
 
@@ -51,13 +62,18 @@
             direction: "horizontal"
           },
           769: {
-            direction: "vertical"
+            direction: "vertical",
+            slidesPerView: 5,
           },
          },
       });
 
       var swiper2 = new Swiper(".mySwiper2_tabs", {
         slidesPerView: 1,
+        effect: "fade",
+        fadeEffect: {
+          crossFade: true
+        },
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
@@ -78,13 +94,18 @@
             direction: "horizontal"
           },
           769: {
-            direction: "vertical"
+            direction: "vertical",
+            slidesPerView: 5,
           },
          },
        });
 
      var swiper2 = new Swiper(".mySwiper2_tabs_2", {
         slidesPerView: 1,
+        effect: "fade",
+        fadeEffect: {
+          crossFade: true
+        },
          navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
@@ -107,13 +128,18 @@
             direction: "horizontal"
           },
           769: {
-            direction: "vertical"
+            direction: "vertical",
+            slidesPerView: 5,
           },
          },
        });
 
      var swiper2 = new Swiper(".mySwiper2_tabs_2_2", {
         slidesPerView: 1,
+        effect: "fade",
+         fadeEffect: {
+          crossFade: true
+        },
          navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
@@ -134,13 +160,18 @@
             direction: "horizontal"
           },
           769: {
-            direction: "vertical"
+            direction: "vertical",
+            slidesPerView: 5,
           },
          },
        });
 
      var swiper2 = new Swiper(".mySwiper2_tabs_2_2_2", {
         slidesPerView: 1,
+        effect: "fade",
+         fadeEffect: {
+          crossFade: true
+        },
          navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
@@ -167,7 +198,6 @@
 
         var swiper = new Swiper(".mySwiper4", {
         cssMode: true,
-        // spaceBetween: 0,
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",

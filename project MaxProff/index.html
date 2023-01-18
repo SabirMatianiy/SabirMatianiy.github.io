@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">   
-<head> 
+<html lang="en">    
+<head>   
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -426,6 +426,31 @@
 				</div>
 			</div>
 			<section class="maxproff_section">
+				<div class="form_submission">
+					<div class="form_submission_container">
+						<div class="form_submission_header">
+							<p class="form_submission_header_text">
+								Ваш заказ отправлен
+							</p>
+						</div>
+						<div class="form_submission_body">
+							<p class="form_submission_body_text">
+								Вид ремонта: <span></span>
+							</p>
+							<p class="form_submission_body_text">
+								Тип вашей недвижимости: <span></span>
+							</p>
+							<p class="form_submission_body_text">
+								Количество комнат <span></span>
+							</p>
+							<p><span></span></p>
+							<p><span></span></p>
+							<p><span></span></p>
+							<p><span></span></p>
+							<p><span></span></p>
+						</div>
+					</div>
+				</div>
 				<div class="maxproff_section_backround">
 					<img src="./image/filtr_backround.png">
 					<img src="./image/backround_image.png">
@@ -501,21 +526,21 @@
 								<div class="maxproff_section_calculation_radio">
 									<div class="maxproff_section_calculation_radio_row">
 										<div class="maxproff_section_calculation_radio_block">
-											<input type="radio" name="radio_cosmetics">
+											<input type="radio" name="radio_cosmetics" value="Косметический" class="radion_btn_1">
 											<label for="cosmetics" class="maxproff_section_calculation_radio_text">Косметический</label>
 										</div>
 										<div class="maxproff_section_calculation_radio_block">
-											<input type="radio" name="radio_cosmetics">
+											<input type="radio" name="radio_cosmetics" value="Капитальный" class="radio_btn_">
 											<label for="cosmetics" class="maxproff_section_calculation_radio_text">Капитальный</label>
 										</div>
 									</div>
 									<div class="maxproff_section_calculation_radio_row">
 										<div class="maxproff_section_calculation_radio_block">
-											<input type="radio" name="radio_cosmetics">
+											<input type="radio" name="radio_cosmetics" value="Под ключ">
 											<label for="cosmetics" class="maxproff_section_calculation_radio_text">Под ключ</label>
 										</div>
 										<div class="maxproff_section_calculation_radio_block">
-											<input type="radio" name="radio_cosmetics">
+											<input type="radio" name="radio_cosmetics" value="Дизайнерский">
 											<label for="cosmetics" class="maxproff_section_calculation_radio_text">Дизайнерский</label>
 										</div>
 									</div>
@@ -527,9 +552,9 @@
 										</p>
 									</div>
 									<div class="maxproff_section_calculation_real_estate_block">
-										<input type="radio" name="new_building_radio">
+										<input type="radio" name="new_building_radio" value="Новостройка">
 										<label for="new_building" class="new_building_text">Новостройка</label>
-										<input type="radio" name="new_building_radio">
+										<input type="radio" name="new_building_radio" value="Вторичное жилье">
 										<label for="new_building" class="new_building_text">Вторичное жилье</label>
 									</div>
 								</div>
@@ -541,13 +566,13 @@
 									</div>
 									<div class="maxproff_section_calculation_rooms_block">
 										<label for="rooms">1</label>
-										<input type="radio" name="rooms_one">
+										<input type="radio" name="room" value="1" class="radion_btn">
 										<label for="rooms">2</label>
-										<input type="radio" name="rooms_one">
+										<input type="radio" name="room" value="2"  class="radion_btn">
 										<label for="rooms">3</label>
-										<input type="radio" name="rooms_one">
+										<input type="radio" name="room" value="3"  class="radion_btn">
 										<label for="rooms">4</label>
-										<input type="radio" name="rooms_one">
+										<input type="radio" name="room" value="4"  class="radion_btn">
 									</div>
 								</div>
 								<div class="maxproff_section_calculation_area">
@@ -558,8 +583,10 @@
 									</div>
 									<div class="maxproff_section_calculation_area_range">
 										<div class="range_track">
-											<input type="range"  class="range_slider">
-											<div class="range_band"></div>
+											<input type="range" step="1" class="range_slider">
+											<div class="range_band">
+												<div class="range_band_input"></div>
+											</div>
 										</div>
 										<div class="range_number">
 											<p class="range_number_track">35</p>
@@ -573,7 +600,7 @@
 												Срок ремонта:
 											</p>
 											<p class="maxproff_section_calculation_repair_time_content_text_body">
-												до 34 дней
+												до <span>34</span> дней
 											</p>
 										</div>
 										<div class="maxproff_section_calculation_repair_time_content">
@@ -581,7 +608,7 @@
 												Скидка составит:
 											</p>
 											<p class="maxproff_section_calculation_repair_time_content_text_body">
-												23 765 руб
+												<span>23 765 руб</span>
 											</p>
 										</div>
 									</div>
@@ -594,10 +621,10 @@
 									</div>
 									<div class="maxproff_section_calculation_repair_phone_input">
 										<div class="maxproff_section_calculation_repair_phone_input_block">
-											<input type="text">
+											<input type="text" value="">
 										</div>
 										<div class="maxproff_section_calculation_repair_phone_button">
-											<button type="button" class="maxproff_section_calculation_repair_phone_submit">Заказать</button>
+											<button type="submit" class="maxproff_section_calculation_repair_phone_submit">Заказать</button>
 										</div>
 									</div>
 								</div>
@@ -621,21 +648,21 @@
 											<div class="maxproff_section_calculation_radio">
 												<div class="maxproff_section_calculation_radio_row">
 													<div class="maxproff_section_calculation_radio_block">
-														<input type="radio" name="radio_cosmetics">
+														<input type="radio" name="radio_cosmetics" value="Косметический" class="cosmeticsTab">
 														<label for="cosmetics" class="maxproff_section_calculation_radio_text">Косметический</label>
 													</div>
 													<div class="maxproff_section_calculation_radio_block">
-														<input type="radio" name="radio_cosmetics">
+														<input type="radio" name="radio_cosmetics" class="capitalTab" value="Капитальный">
 														<label for="cosmetics" class="maxproff_section_calculation_radio_text">Капитальный</label>
 													</div>
 												</div>
 												<div class="maxproff_section_calculation_radio_row">
 													<div class="maxproff_section_calculation_radio_block">
-														<input type="radio" name="radio_cosmetics">
+														<input type="radio" name="radio_cosmetics" class="full_constructionTab" value="Под ключ">
 														<label for="cosmetics" class="maxproff_section_calculation_radio_text">Под ключ</label>
 													</div>
 													<div class="maxproff_section_calculation_radio_block">
-														<input type="radio" name="radio_cosmetics">
+														<input type="radio" name="radio_cosmetics" class="designTab" value="Дизайнерский">
 														<label for="cosmetics" class="maxproff_section_calculation_radio_text">Дизайнерский</label>
 													</div>
 												</div>
@@ -649,9 +676,9 @@
 													</p>
 												</div>
 												<div class="maxproff_section_calculation_real_estate_block">
-													<input type="radio" name="new_building_radio">
+													<input type="radio" name="new_building_radio" class="new_buildingTab" value="Новостройка">
 													<label for="new_building" class="new_building_text">Новостройка</label>
-													<input type="radio" name="new_building_radio">
+													<input type="radio" name="new_building_radio" class="old_buildingTab" value="Вторичное жилье">
 													<label for="new_building" class="new_building_text">Вторичное жилье</label>
 												</div>
 											</div>
@@ -666,13 +693,13 @@
 											</div>
 											<div class="maxproff_section_calculation_rooms_block">
 												<label for="rooms">1</label>
-												<input type="radio" name="rooms_one">
+												<input type="radio" name="rooms_one" value="1">
 												<label for="rooms">2</label>
-												<input type="radio" name="rooms_one">
+												<input type="radio" name="rooms_one" value="2">
 												<label for="rooms">3</label>
-												<input type="radio" name="rooms_one">
+												<input type="radio" name="rooms_one" value="3">
 												<label for="rooms">4</label>
-												<input type="radio" name="rooms_one">
+												<input type="radio" name="rooms_one" value="4">
 											</div>
 										</div>
 										<div class="maxproff_section_calculation_area">
@@ -683,8 +710,10 @@
 											</div>
 											<div class="maxproff_section_calculation_area_range">
 												<div class="range_track">
-													<input type="range" min="0" max="100" class="range_slider_tab">
-													<div class="range_band_tab"></div>
+													<input type="range" class="range_slider_tab">
+													<div class="range_band_tab">
+														<div class="range_band_tab_width"></div>
+													</div>
 												</div>
 												<div class="range_number">
 													<p class="range_number_track_tab">35</p>
@@ -699,16 +728,16 @@
 											<p class="maxproff_section_calculation_repair_time_content_text">
 												Срок ремонта:
 											</p>
-											<p class="maxproff_section_calculation_repair_time_content_text_body">
-												до 34 дней
+											<p class="maxproff_section_calculation_repair_time_content_text_body_tab">
+												до <span>34</span> дней
 											</p>
 										</div>
-										<div class="maxproff_section_calculation_repair_time_content">
+										<div class="maxproff_section_calculation_repair_time_content tab">
 											<p class="maxproff_section_calculation_repair_time_content_text">
 												Скидка составит:
 											</p>
-											<p class="maxproff_section_calculation_repair_time_content_text_body">
-												23 765 руб
+											<p class="maxproff_section_calculation_repair_time_content_text_body tab_text">
+												<span>23 765</span> руб
 											</p>
 										</div>
 									</div>
@@ -721,10 +750,10 @@
 									</div>
 									<div class="maxproff_section_calculation_repair_phone_input">
 										<div class="maxproff_section_calculation_repair_phone_input_block">
-											<input type="text">
+											<input type="text" class="inputTab">
 										</div>
 										<div class="maxproff_section_calculation_repair_phone_button">
-											<button type="button" class="maxproff_section_calculation_repair_phone_submit">Заказать</button>
+											<button type="submit" class="maxproff_section_calculation_repair_phone_submit">Заказать</button>
 										</div>
 									</div>
 								</div>
@@ -747,21 +776,21 @@
 								<div class="maxproff_section_calculation_radio">
 									<div class="maxproff_section_calculation_radio_row">
 										<div class="maxproff_section_calculation_radio_block">
-											<input type="radio" name="radio_cosmetics">
+											<input type="radio" name="radio_cosmetics" class="cosmeticsMob" value="Косметический">
 											<label for="cosmetics" class="maxproff_section_calculation_radio_text">Косметический</label>
 										</div>
 										<div class="maxproff_section_calculation_radio_block">
-											<input type="radio" name="radio_cosmetics">
+											<input type="radio" name="radio_cosmetics" class="capitalMob" value="Капитальный">
 											<label for="cosmetics" class="maxproff_section_calculation_radio_text">Капитальный</label>
 										</div>
 									</div>
 									<div class="maxproff_section_calculation_radio_row">
 										<div class="maxproff_section_calculation_radio_block">
-											<input type="radio" name="radio_cosmetics">
+											<input type="radio" name="radio_cosmetics" class="full_constructionMob" value="Под ключ">
 											<label for="cosmetics" class="maxproff_section_calculation_radio_text">Под ключ</label>
 										</div>
 										<div class="maxproff_section_calculation_radio_block">
-											<input type="radio" name="radio_cosmetics">
+											<input type="radio" name="radio_cosmetics" class="designMob" value="Дизайнерский">
 											<label for="cosmetics" class="maxproff_section_calculation_radio_text">Дизайнерский</label>
 										</div>
 									</div>
@@ -773,9 +802,9 @@
 										</p>
 									</div>
 									<div class="maxproff_section_calculation_real_estate_block">
-										<input type="radio" name="new_building_radio">
+										<input type="radio" name="new_building_radio" class="new_buildingMob" value="Новостройка">
 										<label for="new_building" class="new_building_text">Новостройка</label>
-										<input type="radio" name="new_building_radio">
+										<input type="radio" name="new_building_radio" class="old_buildingMob" value="Вторичное жилье">
 										<label for="new_building" class="new_building_text">Вторичное жилье</label>
 									</div>
 								</div>
@@ -785,15 +814,15 @@
 											Количество комнат
 										</p>
 									</div>
-									<div class="maxproff_section_calculation_rooms_block">
+									<div class="maxproff_section_calculation_rooms_block rooms_mobi">
 										<label for="rooms">1</label>
-										<input type="radio" name="rooms_one">
+										<input type="radio" name="rooms_one" value="1">
 										<label for="rooms">2</label>
-										<input type="radio" name="rooms_one">
+										<input type="radio" name="rooms_one" value="2">
 										<label for="rooms">3</label>
-										<input type="radio" name="rooms_one">
+										<input type="radio" name="rooms_one" value="3">
 										<label for="rooms">4</label>
-										<input type="radio" name="rooms_one">
+										<input type="radio" name="rooms_one" value="4">
 									</div>
 								</div>
 								<div class="maxproff_section_calculation_area">
@@ -814,9 +843,6 @@
 											<input type="range" class="range_slider_mobile">
 											<div class="range_band_slider_mobile"></div>
 										</div>
-										<div class="range_number">
-											<p class="range_number_track_mobile">35</p>
-										</div>
 									</div>
 								</div>
 								<div class="maxproff_section_calculation_repair_time">
@@ -825,16 +851,16 @@
 											<p class="maxproff_section_calculation_repair_time_content_text">
 												Срок ремонта:
 											</p>
-											<p class="maxproff_section_calculation_repair_time_content_text_body">
-												до 34 дней
+											<p class="maxproff_section_calculation_repair_time_content_text_body TabMobText">
+												до <span>34</span> дней
 											</p>
 										</div>
 										<div class="maxproff_section_calculation_repair_time_content">
 											<p class="maxproff_section_calculation_repair_time_content_text">
 												Скидка составит:
 											</p>
-											<p class="maxproff_section_calculation_repair_time_content_text_body">
-												23 765 руб
+											<p class="maxproff_section_calculation_repair_time_content_text_body TabMobTextDisc">
+												<span>23 765</span> руб
 											</p>
 										</div>
 									</div>
@@ -847,10 +873,10 @@
 									</div>
 									<div class="maxproff_section_calculation_repair_phone_input">
 										<div class="maxproff_section_calculation_repair_phone_input_block">
-											<input type="text">
+											<input type="text" class="input_mobi">
 										</div>
 										<div class="maxproff_section_calculation_repair_phone_button">
-											<button type="button" class="maxproff_section_calculation_repair_phone_submit">Заказать</button>
+											<button type="submit" class="maxproff_section_calculation_repair_phone_submit">Заказать</button>
 										</div>
 									</div>
 								</div>
@@ -1519,15 +1545,15 @@
 									<div class="maxproff_section_work_examples_slider_horizontal_item">
 										<div class="maxproff_section_work_examples_slider_horizontal_content">
 											<img src="./img/sign_1.png" alt="">
-											<span>Сумма:</span><span>272 250 руб.</span>
+											<span>Сумма:</span><span>300 250 руб.</span>
 											<img src="./img/sign_2.png" alt="">
-											<span>Площадь:</span><span>43 м2</span>
+											<span>Площадь:</span><span>50 м2</span>
 											<img src="./img/sign_3.png" alt="">
-											<span>Срок:</span><span>90 дней</span>
+											<span>Срок:</span><span>120 дней</span>
 											<img src="./img/sign_4.png" alt="">
-											<span>Комнат:</span><span>3</span>
+											<span>Комнат:</span><span>4</span>
 											<img src="./img/sign_5.png" alt="">
-											<span>Адрес:</span><span>Кулика 18</span>
+											<span>Адрес:</span><span>Жукова 23</span>
 										</div>
 										<div class="maxproff_section_work_examples_slider_horizontal_ul">
 											<img src="./img/sign_6.png" alt="">
@@ -1558,15 +1584,15 @@
 									<div class="maxproff_section_work_examples_slider_horizontal_item">
 										<div class="maxproff_section_work_examples_slider_horizontal_content">
 											<img src="./img/sign_1.png" alt="">
-											<span>Сумма:</span><span>272 250 руб.</span>
+											<span>Сумма:</span><span>150 500 руб.</span>
 											<img src="./img/sign_2.png" alt="">
-											<span>Площадь:</span><span>43 м2</span>
+											<span>Площадь:</span><span>40 м2</span>
 											<img src="./img/sign_3.png" alt="">
-											<span>Срок:</span><span>90 дней</span>
+											<span>Срок:</span><span>35 дней</span>
 											<img src="./img/sign_4.png" alt="">
-											<span>Комнат:</span><span>3</span>
+											<span>Комнат:</span><span>2</span>
 											<img src="./img/sign_5.png" alt="">
-											<span>Адрес:</span><span>Кулика 18</span>
+											<span>Адрес:</span><span>Победы 23</span>
 										</div>
 										<div class="maxproff_section_work_examples_slider_horizontal_ul">
 											<img src="./img/sign_6.png" alt="">
@@ -1597,15 +1623,15 @@
 									<div class="maxproff_section_work_examples_slider_horizontal_item">
 										<div class="maxproff_section_work_examples_slider_horizontal_content">
 											<img src="./img/sign_1.png" alt="">
-											<span>Сумма:</span><span>272 250 руб.</span>
+											<span>Сумма:</span><span>85 250 руб.</span>
 											<img src="./img/sign_2.png" alt="">
-											<span>Площадь:</span><span>43 м2</span>
+											<span>Площадь:</span><span>40 м2</span>
 											<img src="./img/sign_3.png" alt="">
-											<span>Срок:</span><span>90 дней</span>
+											<span>Срок:</span><span>20 дней</span>
 											<img src="./img/sign_4.png" alt="">
-											<span>Комнат:</span><span>3</span>
+											<span>Комнат:</span><span>2</span>
 											<img src="./img/sign_5.png" alt="">
-											<span>Адрес:</span><span>Кулика 18</span>
+											<span>Адрес:</span><span>Петрова 64</span>
 										</div>
 										<div class="maxproff_section_work_examples_slider_horizontal_ul">
 											<img src="./img/sign_6.png" alt="">
@@ -1636,15 +1662,15 @@
 									<div class="maxproff_section_work_examples_slider_horizontal_item">
 										<div class="maxproff_section_work_examples_slider_horizontal_content">
 											<img src="./img/sign_1.png" alt="">
-											<span>Сумма:</span><span>272 250 руб.</span>
+											<span>Сумма:</span><span>498 321 руб.</span>
 											<img src="./img/sign_2.png" alt="">
-											<span>Площадь:</span><span>43 м2</span>
+											<span>Площадь:</span><span>75 м2</span>
 											<img src="./img/sign_3.png" alt="">
-											<span>Срок:</span><span>90 дней</span>
+											<span>Срок:</span><span>120 дней</span>
 											<img src="./img/sign_4.png" alt="">
-											<span>Комнат:</span><span>3</span>
+											<span>Комнат:</span><span>4</span>
 											<img src="./img/sign_5.png" alt="">
-											<span>Адрес:</span><span>Кулика 18</span>
+											<span>Адрес:</span><span>Сидорова 40</span>
 										</div>
 										<div class="maxproff_section_work_examples_slider_horizontal_ul">
 											<img src="./img/sign_6.png" alt="">
@@ -1702,15 +1728,15 @@
 									<div class="maxproff_section_work_examples_slider_horizontal_item">
 										<div class="maxproff_section_work_examples_slider_horizontal_content">
 											<img src="./img/sign_1.png" alt="">
-											<span>Сумма:</span><span>272 250 руб.</span>
+											<span>Сумма:</span><span>500 214 руб.</span>
 											<img src="./img/sign_2.png" alt="">
-											<span>Площадь:</span><span>43 м2</span>
+											<span>Площадь:</span><span>94 м2</span>
 											<img src="./img/sign_3.png" alt="">
-											<span>Срок:</span><span>90 дней</span>
+											<span>Срок:</span><span>124 дней</span>
 											<img src="./img/sign_4.png" alt="">
-											<span>Комнат:</span><span>3</span>
+											<span>Комнат:</span><span>6</span>
 											<img src="./img/sign_5.png" alt="">
-											<span>Адрес:</span><span>Кулика 18</span>
+											<span>Адрес:</span><span>Варшавское шоссе 42</span>
 										</div>
 										<div class="maxproff_section_work_examples_slider_horizontal_ul">
 											<img src="./img/sign_6.png" alt="">
@@ -1741,15 +1767,15 @@
 									<div class="maxproff_section_work_examples_slider_horizontal_item">
 										<div class="maxproff_section_work_examples_slider_horizontal_content">
 											<img src="./img/sign_1.png" alt="">
-											<span>Сумма:</span><span>272 250 руб.</span>
+											<span>Сумма:</span><span>430 765 руб.</span>
 											<img src="./img/sign_2.png" alt="">
-											<span>Площадь:</span><span>43 м2</span>
+											<span>Площадь:</span><span>150 м2</span>
 											<img src="./img/sign_3.png" alt="">
-											<span>Срок:</span><span>90 дней</span>
+											<span>Срок:</span><span>115 дней</span>
 											<img src="./img/sign_4.png" alt="">
-											<span>Комнат:</span><span>3</span>
+											<span>Комнат:</span><span>5</span>
 											<img src="./img/sign_5.png" alt="">
-											<span>Адрес:</span><span>Кулика 18</span>
+											<span>Адрес:</span><span>Раменское 75</span>
 										</div>
 										<div class="maxproff_section_work_examples_slider_horizontal_ul">
 											<img src="./img/sign_6.png" alt="">
@@ -1780,15 +1806,15 @@
 									<div class="maxproff_section_work_examples_slider_horizontal_item">
 										<div class="maxproff_section_work_examples_slider_horizontal_content">
 											<img src="./img/sign_1.png" alt="">
-											<span>Сумма:</span><span>272 250 руб.</span>
+											<span>Сумма:</span><span>356 774 руб.</span>
 											<img src="./img/sign_2.png" alt="">
-											<span>Площадь:</span><span>43 м2</span>
+											<span>Площадь:</span><span>50 м2</span>
 											<img src="./img/sign_3.png" alt="">
-											<span>Срок:</span><span>90 дней</span>
+											<span>Срок:</span><span>100 дней</span>
 											<img src="./img/sign_4.png" alt="">
 											<span>Комнат:</span><span>3</span>
 											<img src="./img/sign_5.png" alt="">
-											<span>Адрес:</span><span>Кулика 18</span>
+											<span>Адрес:</span><span>Щелкино 57</span>
 										</div>
 										<div class="maxproff_section_work_examples_slider_horizontal_ul">
 											<img src="./img/sign_6.png" alt="">
@@ -1819,15 +1845,15 @@
 									<div class="maxproff_section_work_examples_slider_horizontal_item">
 										<div class="maxproff_section_work_examples_slider_horizontal_content">
 											<img src="./img/sign_1.png" alt="">
-											<span>Сумма:</span><span>272 250 руб.</span>
+											<span>Сумма:</span><span>345 432 руб.</span>
 											<img src="./img/sign_2.png" alt="">
-											<span>Площадь:</span><span>43 м2</span>
+											<span>Площадь:</span><span>67 м2</span>
 											<img src="./img/sign_3.png" alt="">
-											<span>Срок:</span><span>90 дней</span>
+											<span>Срок:</span><span>120 дней</span>
 											<img src="./img/sign_4.png" alt="">
-											<span>Комнат:</span><span>3</span>
+											<span>Комнат:</span><span>4</span>
 											<img src="./img/sign_5.png" alt="">
-											<span>Адрес:</span><span>Кулика 18</span>
+											<span>Адрес:</span><span>Ломоносова 17</span>
 										</div>
 										<div class="maxproff_section_work_examples_slider_horizontal_ul">
 											<img src="./img/sign_6.png" alt="">
@@ -1858,15 +1884,15 @@
 									<div class="maxproff_section_work_examples_slider_horizontal_item">
 										<div class="maxproff_section_work_examples_slider_horizontal_content">
 											<img src="./img/sign_1.png" alt="">
-											<span>Сумма:</span><span>272 250 руб.</span>
+											<span>Сумма:</span><span>678 934 руб.</span>
 											<img src="./img/sign_2.png" alt="">
-											<span>Площадь:</span><span>43 м2</span>
+											<span>Площадь:</span><span>120 м2</span>
 											<img src="./img/sign_3.png" alt="">
-											<span>Срок:</span><span>90 дней</span>
+											<span>Срок:</span><span>140 дней</span>
 											<img src="./img/sign_4.png" alt="">
-											<span>Комнат:</span><span>3</span>
+											<span>Комнат:</span><span>7</span>
 											<img src="./img/sign_5.png" alt="">
-											<span>Адрес:</span><span>Кулика 18</span>
+											<span>Адрес:</span><span>Меньшова 65</span>
 										</div>
 										<div class="maxproff_section_work_examples_slider_horizontal_ul">
 											<img src="./img/sign_6.png" alt="">
@@ -1963,15 +1989,15 @@
 									<div class="maxproff_section_work_examples_slider_horizontal_item">
 										<div class="maxproff_section_work_examples_slider_horizontal_content">
 											<img src="./img/sign_1.png" alt="">
-											<span>Сумма:</span><span>272 250 руб.</span>
+											<span>Сумма:</span><span>400 456 руб.</span>
 											<img src="./img/sign_2.png" alt="">
-											<span>Площадь:</span><span>43 м2</span>
+											<span>Площадь:</span><span>97 м2</span>
 											<img src="./img/sign_3.png" alt="">
-											<span>Срок:</span><span>90 дней</span>
+											<span>Срок:</span><span>160 дней</span>
 											<img src="./img/sign_4.png" alt="">
-											<span>Комнат:</span><span>3</span>
+											<span>Комнат:</span><span>5</span>
 											<img src="./img/sign_5.png" alt="">
-											<span>Адрес:</span><span>Кулика 18</span>
+											<span>Адрес:</span><span>Дмитревское шоссе 76</span>
 										</div>
 										<div class="maxproff_section_work_examples_slider_horizontal_ul">
 											<img src="./img/sign_6.png" alt="">
@@ -2002,15 +2028,15 @@
 									<div class="maxproff_section_work_examples_slider_horizontal_item">
 										<div class="maxproff_section_work_examples_slider_horizontal_content">
 											<img src="./img/sign_1.png" alt="">
-											<span>Сумма:</span><span>272 250 руб.</span>
+											<span>Сумма:</span><span>432 897 руб.</span>
 											<img src="./img/sign_2.png" alt="">
-											<span>Площадь:</span><span>43 м2</span>
+											<span>Площадь:</span><span>76 м2</span>
 											<img src="./img/sign_3.png" alt="">
-											<span>Срок:</span><span>90 дней</span>
+											<span>Срок:</span><span>140 дней</span>
 											<img src="./img/sign_4.png" alt="">
-											<span>Комнат:</span><span>3</span>
+											<span>Комнат:</span><span>4</span>
 											<img src="./img/sign_5.png" alt="">
-											<span>Адрес:</span><span>Кулика 18</span>
+											<span>Адрес:</span><span>Розенбаума 32</span>
 										</div>
 										<div class="maxproff_section_work_examples_slider_horizontal_ul">
 											<img src="./img/sign_6.png" alt="">
@@ -2041,15 +2067,15 @@
 									<div class="maxproff_section_work_examples_slider_horizontal_item">
 										<div class="maxproff_section_work_examples_slider_horizontal_content">
 											<img src="./img/sign_1.png" alt="">
-											<span>Сумма:</span><span>272 250 руб.</span>
+											<span>Сумма:</span><span>257 987 руб.</span>
 											<img src="./img/sign_2.png" alt="">
-											<span>Площадь:</span><span>43 м2</span>
+											<span>Площадь:</span><span>40 м2</span>
 											<img src="./img/sign_3.png" alt="">
-											<span>Срок:</span><span>90 дней</span>
+											<span>Срок:</span><span>70 дней</span>
 											<img src="./img/sign_4.png" alt="">
-											<span>Комнат:</span><span>3</span>
+											<span>Комнат:</span><span>2</span>
 											<img src="./img/sign_5.png" alt="">
-											<span>Адрес:</span><span>Кулика 18</span>
+											<span>Адрес:</span><span>Пушкина 32</span>
 										</div>
 										<div class="maxproff_section_work_examples_slider_horizontal_ul">
 											<img src="./img/sign_6.png" alt="">
@@ -2080,15 +2106,15 @@
 									<div class="maxproff_section_work_examples_slider_horizontal_item">
 										<div class="maxproff_section_work_examples_slider_horizontal_content">
 											<img src="./img/sign_1.png" alt="">
-											<span>Сумма:</span><span>272 250 руб.</span>
+											<span>Сумма:</span><span>560 765 руб.</span>
 											<img src="./img/sign_2.png" alt="">
-											<span>Площадь:</span><span>43 м2</span>
+											<span>Площадь:</span><span>138 м2</span>
 											<img src="./img/sign_3.png" alt="">
-											<span>Срок:</span><span>90 дней</span>
+											<span>Срок:</span><span>150 дней</span>
 											<img src="./img/sign_4.png" alt="">
-											<span>Комнат:</span><span>3</span>
+											<span>Комнат:</span><span>6</span>
 											<img src="./img/sign_5.png" alt="">
-											<span>Адрес:</span><span>Кулика 18</span>
+											<span>Адрес:</span><span>Лужкова 97</span>
 										</div>
 										<div class="maxproff_section_work_examples_slider_horizontal_ul">
 											<img src="./img/sign_6.png" alt="">
@@ -2146,15 +2172,15 @@
 									<div class="maxproff_section_work_examples_slider_horizontal_item">
 										<div class="maxproff_section_work_examples_slider_horizontal_content">
 											<img src="./img/sign_1.png" alt="">
-											<span>Сумма:</span><span>272 250 руб.</span>
+											<span>Сумма:</span><span>430 872 руб.</span>
 											<img src="./img/sign_2.png" alt="">
-											<span>Площадь:</span><span>43 м2</span>
+											<span>Площадь:</span><span>65 м2</span>
 											<img src="./img/sign_3.png" alt="">
-											<span>Срок:</span><span>90 дней</span>
+											<span>Срок:</span><span>110 дней</span>
 											<img src="./img/sign_4.png" alt="">
-											<span>Комнат:</span><span>3</span>
+											<span>Комнат:</span><span>5</span>
 											<img src="./img/sign_5.png" alt="">
-											<span>Адрес:</span><span>Кулика 18</span>
+											<span>Адрес:</span><span>Некрасова 65</span>
 										</div>
 										<div class="maxproff_section_work_examples_slider_horizontal_ul">
 											<img src="./img/sign_6.png" alt="">
@@ -2185,15 +2211,15 @@
 									<div class="maxproff_section_work_examples_slider_horizontal_item">
 										<div class="maxproff_section_work_examples_slider_horizontal_content">
 											<img src="./img/sign_1.png" alt="">
-											<span>Сумма:</span><span>272 250 руб.</span>
+											<span>Сумма:</span><span>345 650 руб.</span>
 											<img src="./img/sign_2.png" alt="">
-											<span>Площадь:</span><span>43 м2</span>
+											<span>Площадь:</span><span>57 м2</span>
 											<img src="./img/sign_3.png" alt="">
-											<span>Срок:</span><span>90 дней</span>
+											<span>Срок:</span><span>120 дней</span>
 											<img src="./img/sign_4.png" alt="">
-											<span>Комнат:</span><span>3</span>
+											<span>Комнат:</span><span>4</span>
 											<img src="./img/sign_5.png" alt="">
-											<span>Адрес:</span><span>Кулика 18</span>
+											<span>Адрес:</span><span>Петрова 82</span>
 										</div>
 										<div class="maxproff_section_work_examples_slider_horizontal_ul">
 											<img src="./img/sign_6.png" alt="">
@@ -2224,15 +2250,15 @@
 									<div class="maxproff_section_work_examples_slider_horizontal_item">
 										<div class="maxproff_section_work_examples_slider_horizontal_content">
 											<img src="./img/sign_1.png" alt="">
-											<span>Сумма:</span><span>272 250 руб.</span>
+											<span>Сумма:</span><span>645 234 руб.</span>
 											<img src="./img/sign_2.png" alt="">
-											<span>Площадь:</span><span>43 м2</span>
+											<span>Площадь:</span><span>97 м2</span>
 											<img src="./img/sign_3.png" alt="">
-											<span>Срок:</span><span>90 дней</span>
+											<span>Срок:</span><span>160 дней</span>
 											<img src="./img/sign_4.png" alt="">
-											<span>Комнат:</span><span>3</span>
+											<span>Комнат:</span><span>5</span>
 											<img src="./img/sign_5.png" alt="">
-											<span>Адрес:</span><span>Кулика 18</span>
+											<span>Адрес:</span><span>Андреева 73</span>
 										</div>
 										<div class="maxproff_section_work_examples_slider_horizontal_ul">
 											<img src="./img/sign_6.png" alt="">
@@ -2263,15 +2289,15 @@
 									<div class="maxproff_section_work_examples_slider_horizontal_item">
 										<div class="maxproff_section_work_examples_slider_horizontal_content">
 											<img src="./img/sign_1.png" alt="">
-											<span>Сумма:</span><span>272 250 руб.</span>
+											<span>Сумма:</span><span>765 345 руб.</span>
 											<img src="./img/sign_2.png" alt="">
-											<span>Площадь:</span><span>43 м2</span>
+											<span>Площадь:</span><span>150 м2</span>
 											<img src="./img/sign_3.png" alt="">
-											<span>Срок:</span><span>90 дней</span>
+											<span>Срок:</span><span>170 дней</span>
 											<img src="./img/sign_4.png" alt="">
-											<span>Комнат:</span><span>3</span>
+											<span>Комнат:</span><span>7</span>
 											<img src="./img/sign_5.png" alt="">
-											<span>Адрес:</span><span>Кулика 18</span>
+											<span>Адрес:</span><span>Пилотова 21</span>
 										</div>
 										<div class="maxproff_section_work_examples_slider_horizontal_ul">
 											<img src="./img/sign_6.png" alt="">
@@ -2302,15 +2328,15 @@
 									<div class="maxproff_section_work_examples_slider_horizontal_item">
 										<div class="maxproff_section_work_examples_slider_horizontal_content">
 											<img src="./img/sign_1.png" alt="">
-											<span>Сумма:</span><span>272 250 руб.</span>
+											<span>Сумма:</span><span>435 987 руб.</span>
 											<img src="./img/sign_2.png" alt="">
-											<span>Площадь:</span><span>43 м2</span>
+											<span>Площадь:</span><span>67 м2</span>
 											<img src="./img/sign_3.png" alt="">
-											<span>Срок:</span><span>90 дней</span>
+											<span>Срок:</span><span>120 дней</span>
 											<img src="./img/sign_4.png" alt="">
-											<span>Комнат:</span><span>3</span>
+											<span>Комнат:</span><span>4</span>
 											<img src="./img/sign_5.png" alt="">
-											<span>Адрес:</span><span>Кулика 18</span>
+											<span>Адрес:</span><span>Фетисова 42</span>
 										</div>
 										<div class="maxproff_section_work_examples_slider_horizontal_ul">
 											<img src="./img/sign_6.png" alt="">
@@ -2368,15 +2394,15 @@
 									<div class="maxproff_section_work_examples_slider_horizontal_item">
 										<div class="maxproff_section_work_examples_slider_horizontal_content">
 											<img src="./img/sign_1.png" alt="">
-											<span>Сумма:</span><span>272 250 руб.</span>
+											<span>Сумма:</span><span>632 912 руб.</span>
 											<img src="./img/sign_2.png" alt="">
-											<span>Площадь:</span><span>43 м2</span>
+											<span>Площадь:</span><span>98 м2</span>
 											<img src="./img/sign_3.png" alt="">
-											<span>Срок:</span><span>90 дней</span>
+											<span>Срок:</span><span>140 дней</span>
 											<img src="./img/sign_4.png" alt="">
-											<span>Комнат:</span><span>3</span>
+											<span>Комнат:</span><span>4</span>
 											<img src="./img/sign_5.png" alt="">
-											<span>Адрес:</span><span>Кулика 18</span>
+											<span>Адрес:</span><span>Матросова 43</span>
 										</div>
 										<div class="maxproff_section_work_examples_slider_horizontal_ul">
 											<img src="./img/sign_6.png" alt="">
@@ -2407,15 +2433,15 @@
 									<div class="maxproff_section_work_examples_slider_horizontal_item">
 										<div class="maxproff_section_work_examples_slider_horizontal_content">
 											<img src="./img/sign_1.png" alt="">
-											<span>Сумма:</span><span>272 250 руб.</span>
+											<span>Сумма:</span><span>560 439 руб.</span>
 											<img src="./img/sign_2.png" alt="">
-											<span>Площадь:</span><span>43 м2</span>
+											<span>Площадь:</span><span>74 м2</span>
 											<img src="./img/sign_3.png" alt="">
-											<span>Срок:</span><span>90 дней</span>
+											<span>Срок:</span><span>140 дней</span>
 											<img src="./img/sign_4.png" alt="">
-											<span>Комнат:</span><span>3</span>
+											<span>Комнат:</span><span>4</span>
 											<img src="./img/sign_5.png" alt="">
-											<span>Адрес:</span><span>Кулика 18</span>
+											<span>Адрес:</span><span>Лермонтова 54</span>
 										</div>
 										<div class="maxproff_section_work_examples_slider_horizontal_ul">
 											<img src="./img/sign_6.png" alt="">
@@ -2446,15 +2472,15 @@
 									<div class="maxproff_section_work_examples_slider_horizontal_item">
 										<div class="maxproff_section_work_examples_slider_horizontal_content">
 											<img src="./img/sign_1.png" alt="">
-											<span>Сумма:</span><span>272 250 руб.</span>
+											<span>Сумма:</span><span>432 645 руб.</span>
 											<img src="./img/sign_2.png" alt="">
-											<span>Площадь:</span><span>43 м2</span>
+											<span>Площадь:</span><span>67 м2</span>
 											<img src="./img/sign_3.png" alt="">
-											<span>Срок:</span><span>90 дней</span>
+											<span>Срок:</span><span>100 дней</span>
 											<img src="./img/sign_4.png" alt="">
-											<span>Комнат:</span><span>3</span>
+											<span>Комнат:</span><span>4</span>
 											<img src="./img/sign_5.png" alt="">
-											<span>Адрес:</span><span>Кулика 18</span>
+											<span>Адрес:</span><span>Диброва 31</span>
 										</div>
 										<div class="maxproff_section_work_examples_slider_horizontal_ul">
 											<img src="./img/sign_6.png" alt="">
@@ -2485,15 +2511,15 @@
 									<div class="maxproff_section_work_examples_slider_horizontal_item">
 										<div class="maxproff_section_work_examples_slider_horizontal_content">
 											<img src="./img/sign_1.png" alt="">
-											<span>Сумма:</span><span>272 250 руб.</span>
+											<span>Сумма:</span><span>432 465 руб.</span>
 											<img src="./img/sign_2.png" alt="">
-											<span>Площадь:</span><span>43 м2</span>
+											<span>Площадь:</span><span>85 м2</span>
 											<img src="./img/sign_3.png" alt="">
-											<span>Срок:</span><span>90 дней</span>
+											<span>Срок:</span><span>120 дней</span>
 											<img src="./img/sign_4.png" alt="">
-											<span>Комнат:</span><span>3</span>
+											<span>Комнат:</span><span>5</span>
 											<img src="./img/sign_5.png" alt="">
-											<span>Адрес:</span><span>Кулика 18</span>
+											<span>Адрес:</span><span>Андропова 87</span>
 										</div>
 										<div class="maxproff_section_work_examples_slider_horizontal_ul">
 											<img src="./img/sign_6.png" alt="">
@@ -2524,15 +2550,15 @@
 									<div class="maxproff_section_work_examples_slider_horizontal_item">
 										<div class="maxproff_section_work_examples_slider_horizontal_content">
 											<img src="./img/sign_1.png" alt="">
-											<span>Сумма:</span><span>272 250 руб.</span>
+											<span>Сумма:</span><span>654 321 руб.</span>
 											<img src="./img/sign_2.png" alt="">
-											<span>Площадь:</span><span>43 м2</span>
+											<span>Площадь:</span><span>130 м2</span>
 											<img src="./img/sign_3.png" alt="">
-											<span>Срок:</span><span>90 дней</span>
+											<span>Срок:</span><span>160 дней</span>
 											<img src="./img/sign_4.png" alt="">
-											<span>Комнат:</span><span>3</span>
+											<span>Комнат:</span><span>6</span>
 											<img src="./img/sign_5.png" alt="">
-											<span>Адрес:</span><span>Кулика 18</span>
+											<span>Адрес:</span><span>Веникова 32</span>
 										</div>
 										<div class="maxproff_section_work_examples_slider_horizontal_ul">
 											<img src="./img/sign_6.png" alt="">

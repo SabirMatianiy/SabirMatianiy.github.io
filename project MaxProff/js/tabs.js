@@ -13,12 +13,12 @@ let slider_5 = document.querySelector(".maxproff_section_work_examples_slider_ho
 
 let masiv = document.querySelectorAll(".maxproff_section_work_examples_slider_horizontal");
 
-// console.log(masiv)
+// console.log(masiv) 
 
 
 for(let i = 0; i < btn_tabs.length; i++){
 
-	btn_tabs[i].onclick = function(){
+	btn_tabs[i].onclick = function(){ 
 
 			if(btn_tabs[0] == btn_tabs[i]){
 
